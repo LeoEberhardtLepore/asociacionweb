@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "PatrickHand-Regukar";
+  src: url("../assets/fonts/PatrickHand-Regular.ttf"); }
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../assets/fonts/Raleway-Light.ttf"); }
+
+h1, h2, h3 {
+  font-family: "PatrickHand-Regular";
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+  color: #000000; }
+
+h1 {
+  padding-top: 90px;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 1px 2px 2px #777676, 0 0 25px #777676, 0 0 5px #777676; }
+
+h2 {
+  font-size: 24px; }
+
+body {
+  margin: 0;
+  background-color: #f0f8ff;
+  font-family: "Raleway-Light";
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body .flecha {
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    background-color: #c42121;
+    animation: palpitar 2s infinite;
+    will-change: transform; }
+    body .flecha .gotopbtn {
+      color: #f0f8ff; }
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
+
+header {
+  position: fixed;
+  background-color: #c42121;
+  width: 100%;
+  height: 10px; }
+  header .container-fluid {
+    background-color: #c42121;
+    position: sticky;
+    display: flex; }
+    header .container-fluid .navbar-brand img {
+      width: 70px; }
+    header .container-fluid .nav-item {
+      display: inline-block;
+      text-align: center; }
+    header .container-fluid .nav-link {
+      padding: 20px;
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      display: inline-block; }
+      header .container-fluid .nav-link:hover {
+        color: #c42121;
+        background-color: white;
+        border-radius: 50%;
+        font-weight: bold; }
+
+main {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  main .descripcion {
+    display: inline-block;
+    padding: 20px;
+    line-height: 1.5;
+    margin: 0 auto; }
+  main .vehiculos {
+    border: #c42121 double 2px;
+    margin: 10px; }
+    main .vehiculos .izq:hover {
+      transform: translate(130px) scale(2, 2); }
+    main .vehiculos .der:hover {
+      transform: translate(-130px) scale(2, 2); }
+    main .vehiculos img {
+      width: 300px;
+      height: 200px;
+      display: inline-block;
+      transition: transform 2s; }
+      main .vehiculos img:hover {
+        transform: scale(2, 2); }
+  main .container-form {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px; }
+    main .container-form h2 {
+      margin-bottom: 15px;
+      font-size: 35px; }
+    main .container-form p {
+      font-size: 15px;
+      padding-left: 5px;
+      line-height: 1.6;
+      margin-bottom: 15px; }
+    main .container-form a {
+      font-size: 15px;
+      padding-left: 5px;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: 700; }
+      main .container-form a i {
+        color: #c42121;
+        margin-right: 10px; }
+    main .container-form form .campo, main .container-form form textarea {
+      width: 400px;
+      padding: 15px;
+      font-size: 15px;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      outline: 0px; }
+    main .container-form form textarea {
+      max-width: 400px;
+      min-width: 400px;
+      min-height: 100px;
+      max-height: 150px; }
+    main .container-form .btn-enviar {
+      padding: 15px;
+      font-size: 15px;
+      border: none;
+      outline: 0px;
+      background: #c42121;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+      opacity: 0.5; }
+      main .container-form .btn-enviar:hover {
+        opacity: 1;
+        animation: palpitar 2s infinite; }
+
+footer {
+  background-color: #c42121;
+  padding: 1em 0;
+  margin-top: auto; }
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .redes span {
+    font-size: 20px;
+    margin-inline: 10px; }
+  footer .facebook {
+    background: #0051ff;
+    padding: 5px;
+    border-radius: 50px;
+    color: white; }
+  footer .instagram {
+    background: #d515bf;
+    padding: 5px;
+    border-radius: 50px;
+    color: white; }
+  footer .whatsapp {
+    background: #3cec5c;
+    padding: 5px;
+    border-radius: 50px;
+    color: white; }
+  footer .copyright {
+    text-align: center;
+    font-family: "Raleway-Light";
+    color: white;
+    font-size: 10px; }
+
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 1.5rem; }
+  h2 {
+    font-size: 16px; }
+  main .descripcion {
+    font-size: 12px; }
+  main .vehiculos img {
+    width: 260px;
+    height: 170px; }
+  main .container-form {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 30px; }
+    main .container-form h2 {
+      font-size: 22px; }
+    main .container-form p {
+      font-size: 12px; }
+    main .container-form a {
+      font-size: 12px; }
+    main .container-form form .campo, main .container-form form textarea {
+      font-size: 12px;
+      width: 300px; }
+    main .container-form form textarea {
+      min-width: 300px;
+      max-width: 300px;
+      font-size: 12px; }
+    main .container-form .btn-enviar {
+      font-size: 12px; } }

@@ -1,0 +1,44 @@
+@media only screen and (max-width: 680px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 16px;
+    }
+    main{
+        .descripcion{
+            font-size: 12px;
+        }
+        .vehiculos img{
+            width: 260px;
+            height: 170px;
+        }
+        .container-form{
+            grid-template-columns: repeat(1,1fr);
+            padding-left: 30px;
+            h2{
+                font-size: 22px
+            }
+            p{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+            }
+            form{
+                .campo, textarea{
+                    font-size: 12px;
+                    width: 300px;
+                }
+                textarea{
+                    min-width: 300px;
+                    max-width: 300px;
+                    font-size: 12px;
+                }
+            }
+            .btn-enviar{
+                font-size: 12px;
+            }
+        } 
+    }
+}

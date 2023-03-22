@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: $color-bg1;
+    font-family: "Raleway-Light";
+    color: $color-lt;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .flecha{
+        position: fixed;
+        bottom: 110px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 30px;
+        background-color: $color-bg2;
+        animation: palpitar 2s infinite;
+        will-change: transform;
+        .gotopbtn{
+            color: $color-bg1;
+        }
+    }
+}

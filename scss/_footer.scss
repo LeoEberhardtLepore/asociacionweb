@@ -1,0 +1,38 @@
+footer{
+    background-color: $color-bg2;
+    padding: 1em 0;
+    margin-top: auto;
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .redes span{
+        font-size: 20px;
+        margin-inline: 10px;
+    }
+    .facebook{
+        background: #0051ff;
+        padding: 5px;
+        border-radius: 50px;
+        color: white;
+    }
+    .instagram{
+        background: #d515bf;
+        padding: 5px;
+        border-radius: 50px;
+        color: white;
+    }
+    .whatsapp{
+        background: #3cec5c;
+        padding: 5px;
+        border-radius: 50px;
+        color: white;
+    }
+    .copyright{
+        text-align: center;
+        font-family: "Raleway-Light";
+        color: white;
+        font-size: 10px;
+    } 
+}
