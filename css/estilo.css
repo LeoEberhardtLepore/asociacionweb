@@ -35,6 +35,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
+  body .eror {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; }
+    body .eror img {
+      width: 50%;
+      padding-top: 80px; }
   body .flecha {
     position: fixed;
     bottom: 110px;
