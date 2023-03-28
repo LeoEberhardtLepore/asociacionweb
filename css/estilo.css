@@ -97,7 +97,7 @@ main .inicio {
   margin-top: 40px; }
   main .inicio .juntada {
     width: 100%;
-    padding: 10px 20px; }
+    padding: 20px 20px; }
 
 main .veh {
   display: flex;
@@ -113,7 +113,7 @@ main .descripcion {
 
 main .vehiculos {
   border: #c42121 double 2px;
-  margin: 10px; }
+  margin: 20px; }
   main .vehiculos .izq:hover {
     transform: translate(40px) scale(1.4, 1.4); }
   main .vehiculos .der:hover {
