@@ -14,18 +14,17 @@
 h1, h2, h3 {
   font-family: "PatrickHand-Regular";
   text-align: center;
-  padding: 20px;
   font-weight: bolder;
   color: #000000; }
 
 h1 {
-  padding-top: 90px;
-  font-size: 32px;
+  padding: 5px;
+  font-size: 28px;
   text-align: center;
   text-shadow: 1px 2px 2px #777676, 0 0 25px #777676, 0 0 5px #777676; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 26px; }
 
 body {
   margin: 0;
@@ -94,16 +93,10 @@ header {
         font-weight: bold; }
 
 main .inicio {
-  margin-top: 40px; }
+  margin-top: 80px; }
   main .inicio .juntada {
     width: 100%;
-    padding: 20px 20px; }
-
-main .veh {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+    padding: 5px 20px; }
 
 main .descripcion {
   display: inline-block;
@@ -111,32 +104,42 @@ main .descripcion {
   line-height: 1.5;
   margin: 0 auto; }
 
-main .vehiculos {
-  border: #c42121 double 2px;
-  margin: 20px; }
-  main .vehiculos .izq:hover {
-    transform: translate(40px) scale(1.4, 1.4); }
-  main .vehiculos .der:hover {
-    transform: translate(-40px) scale(1.4, 1.4); }
-  main .vehiculos img {
-    width: 300px;
-    height: 200px;
-    display: inline-block;
-    transition: transform 2s; }
-    main .vehiculos img:hover {
-      transform: scale(1.4, 1.4); }
+main .h1v {
+  margin-top: 80px; }
+
+main .veh {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center; }
+  main .veh .vehiculos {
+    border: #c42121 double 2px;
+    margin: 20px; }
+    main .veh .vehiculos .izq:hover {
+      transform: translate(40px) scale(1.4, 1.4); }
+    main .veh .vehiculos .der:hover {
+      transform: translate(-40px) scale(1.4, 1.4); }
+    main .veh .vehiculos img {
+      width: 300px;
+      height: 200px;
+      display: inline-block;
+      transition: transform 2s; }
+      main .veh .vehiculos img:hover {
+        transform: scale(1.4, 1.4); }
+    main .veh .vehiculos .texto {
+      margin: 5px;
+      font-weight: bold; }
 
 main .container-form {
-  padding: 10px 10px;
-  width: 100%;
   max-width: 1100px;
   margin-top: 80px;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px; }
-  main .container-form h2 {
-    margin-bottom: 15px;
-    font-size: 35px; }
+  grid-gap: 30px; }
+  main .container-form h1 {
+    margin-bottom: 15px; }
   main .container-form p {
     font-size: 15px;
     padding-left: 5px;
@@ -155,7 +158,7 @@ main .container-form {
       color: #c42121;
       margin-right: 10px; }
   main .container-form form .campo, main .container-form form textarea {
-    width: 400px;
+    width: 350px;
     padding: 15px;
     font-size: 15px;
     border: 1px solid #dbdbdb;
@@ -163,8 +166,8 @@ main .container-form {
     border-radius: 3px;
     outline: 0px; }
   main .container-form form textarea {
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 350px;
+    min-width: 350px;
     min-height: 100px;
     max-height: 150px; }
   main .container-form .btn-enviar {
@@ -220,14 +223,14 @@ footer {
     font-size: 16px; }
   main .descripcion {
     font-size: 12px; }
-  main .vehiculos .izq:hover {
+  main .veh .vehiculos .izq:hover {
     transform: translate(0px) scale(1.5, 1.5); }
-  main .vehiculos .der:hover {
+  main .veh .vehiculos .der:hover {
     transform: translate(0px) scale(1.5, 1.5); }
-  main .vehiculos img {
+  main .veh .vehiculos img {
     width: 260px;
     height: 170px; }
-    main .vehiculos img:hover {
+    main .veh .vehiculos img:hover {
       transform: scale(1.5, 1.5); }
   main .container-form {
     grid-template-columns: repeat(1, 1fr);
