@@ -23,9 +23,6 @@ h1 {
   text-align: center;
   text-shadow: 1px 2px 2px #777676, 0 0 25px #777676, 0 0 5px #777676; }
 
-h2 {
-  font-size: 26px; }
-
 body {
   margin: 0;
   background-color: #f0f8ff;
@@ -67,122 +64,139 @@ body {
     transform: scale(1); } }
 
 header {
-  position: fixed;
   background-color: #c42121;
   width: 100%;
-  height: 10px; }
+  height: auto;
+  margin-bottom: 10px; }
   header .container-fluid {
     background-color: #c42121;
-    position: sticky;
     display: flex; }
     header .container-fluid .navbar-brand img {
       width: 70px; }
     header .container-fluid .nav-item {
       display: inline-block;
-      text-align: center; }
-    header .container-fluid .nav-link {
-      padding: 20px;
-      margin: 10px;
-      color: white;
-      text-decoration: none;
-      display: inline-block; }
-      header .container-fluid .nav-link:hover {
-        color: #c42121;
-        background-color: white;
-        border-radius: 50%;
-        font-weight: bold; }
+      text-align: center;
+      text-decoration: none; }
+      header .container-fluid .nav-item .nav-link {
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        display: inline-block; }
+        header .container-fluid .nav-item .nav-link:hover {
+          color: #c42121;
+          background-color: white;
+          border-radius: 50%;
+          font-weight: bold; }
+      header .container-fluid .nav-item .dropdown-menu {
+        background-color: #c42121;
+        text-align: center; }
+        header .container-fluid .nav-item .dropdown-menu .dropdown-item {
+          color: white;
+          text-decoration: none; }
+          header .container-fluid .nav-item .dropdown-menu .dropdown-item:hover {
+            color: #c42121;
+            background-color: white;
+            border-radius: 50%;
+            font-weight: bold; }
 
-main .inicio {
-  margin-top: 80px; }
+main {
+  margin: auto; }
   main .inicio .juntada {
     width: 100%;
     padding: 5px 20px; }
-
-main .descripcion {
-  display: inline-block;
-  padding: 20px;
-  line-height: 1.5;
-  margin: 0 auto; }
-
-main .h1v {
-  margin-top: 80px; }
-
-main .veh {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center; }
-  main .veh .vehiculos {
-    border: #c42121 double 2px;
-    margin: 20px; }
-    main .veh .vehiculos .izq:hover {
-      transform: translate(40px) scale(1.4, 1.4); }
-    main .veh .vehiculos .der:hover {
-      transform: translate(-40px) scale(1.4, 1.4); }
-    main .veh .vehiculos img {
-      width: 300px;
-      height: 200px;
-      display: inline-block;
-      transition: transform 2s; }
-      main .veh .vehiculos img:hover {
-        transform: scale(1.4, 1.4); }
-    main .veh .vehiculos .texto {
-      margin: 5px;
-      font-weight: bold; }
-
-main .container-form {
-  max-width: 1100px;
-  margin-top: 80px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px; }
-  main .container-form h1 {
-    margin-bottom: 15px; }
-  main .container-form p {
-    font-size: 15px;
-    padding-left: 5px;
-    line-height: 1.6;
-    margin-bottom: 15px; }
-  main .container-form a {
-    font-size: 15px;
-    padding-left: 5px;
+  main .iniciovideo {
+    text-align: center;
+    line-height: 0; }
+    main .iniciovideo .invid {
+      width: 560px;
+      height: 315px; }
+  main .descripcion {
     display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: 700; }
-    main .container-form a i {
-      color: #c42121;
-      margin-right: 10px; }
-  main .container-form form .campo, main .container-form form textarea {
-    width: 350px;
-    padding: 15px;
-    font-size: 15px;
-    border: 1px solid #dbdbdb;
-    margin-bottom: 15px;
-    border-radius: 3px;
-    outline: 0px; }
-  main .container-form form textarea {
-    max-width: 350px;
-    min-width: 350px;
-    min-height: 100px;
-    max-height: 150px; }
-  main .container-form .btn-enviar {
-    padding: 15px;
-    font-size: 15px;
-    border: none;
-    outline: 0px;
-    background: #c42121;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    opacity: 0.5; }
-    main .container-form .btn-enviar:hover {
-      opacity: 1;
-      animation: palpitar 2s infinite; }
+    padding: 20px;
+    line-height: 1.5;
+    margin: 0 auto; }
+  main .veh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center; }
+    main .veh .vehiculos {
+      border: #c42121 solid 2px;
+      margin: 20px; }
+      main .veh .vehiculos img {
+        width: 300px;
+        height: 200px;
+        display: inline-block; }
+      main .veh .vehiculos .texto {
+        margin: 5px;
+        font-weight: bold; }
+  main .vehiculosvideos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+    main .vehiculosvideos .vhvid {
+      border: #c42121 solid 2px;
+      margin: 20px;
+      line-height: 0; }
+      main .vehiculosvideos .vhvid .vid {
+        width: 560px;
+        height: 315px; }
+  main .container-form {
+    max-width: 1100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; }
+    main .container-form h1 {
+      margin-bottom: 15px; }
+    main .container-form p {
+      font-size: 15px;
+      padding-left: 5px;
+      line-height: 1.6;
+      margin-bottom: 15px; }
+    main .container-form a {
+      font-size: 15px;
+      padding-left: 5px;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: 700; }
+      main .container-form a i {
+        color: #c42121;
+        margin-right: 10px; }
+    main .container-form form .campo, main .container-form form textarea {
+      width: 350px;
+      padding: 15px;
+      font-size: 15px;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      outline: 0px; }
+    main .container-form form textarea {
+      max-width: 350px;
+      min-width: 350px;
+      min-height: 100px;
+      max-height: 150px; }
+    main .container-form .btn-enviar {
+      padding: 15px;
+      font-size: 15px;
+      border: none;
+      outline: 0px;
+      background: #c42121;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+      opacity: 0.5; }
+      main .container-form .btn-enviar:hover {
+        opacity: 1;
+        animation: palpitar 2s infinite; }
 
 footer {
   background-color: #c42121;
@@ -216,27 +230,26 @@ footer {
     color: white;
     font-size: 10px; }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (min-width: 350px) {
   h1 {
-    font-size: 1.5rem; }
-  h2 {
-    font-size: 16px; }
-  main .descripcion {
+    font-size: 20px; }
+  main .inicio .descripcion {
     font-size: 12px; }
-  main .veh .vehiculos .izq:hover {
-    transform: translate(0px) scale(1.5, 1.5); }
-  main .veh .vehiculos .der:hover {
-    transform: translate(0px) scale(1.5, 1.5); }
-  main .veh .vehiculos img {
-    width: 260px;
-    height: 170px; }
-    main .veh .vehiculos img:hover {
-      transform: scale(1.5, 1.5); }
+  main .iniciovideo .invid {
+    width: 300px;
+    height: 169px; }
+  main .veh .vehiculos .texto {
+    font-size: 15px; }
+  main .veh .vehiculos img:hover {
+    transition: transform 2s;
+    transform: scale(1.2, 1.2);
+    text-align: center; }
+  main .vehiculosvideos .vhvid .vid {
+    width: 300px;
+    height: 169px; }
   main .container-form {
     grid-template-columns: repeat(1, 1fr);
     padding-left: 30px; }
-    main .container-form h2 {
-      font-size: 22px; }
     main .container-form p {
       font-size: 12px; }
     main .container-form a {
@@ -250,3 +263,62 @@ footer {
       font-size: 12px; }
     main .container-form .btn-enviar {
       font-size: 12px; } }
+
+@media only screen and (min-width: 576px) {
+  main h1 {
+    font-size: 25px; }
+  main .inicio .descripcion {
+    font-size: 15px; }
+  main .iniciovideo .invid {
+    width: 560px;
+    height: 315px; }
+  main .vehiculosvideos .vhvid .vid {
+    width: 560px;
+    height: 315px; }
+  main .container-form p {
+    font-size: 15px; }
+  main .container-form a {
+    font-size: 15px; }
+  main .container-form form .campo, main .container-form form textarea {
+    font-size: 15px;
+    width: 300px; }
+  main .container-form .btn-enviar {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 686px) {
+  main .veh .vehiculos .a1:hover, main .veh .vehiculos .a3:hover, main .veh .vehiculos .a5:hover, main .veh .vehiculos .a7:hover, main .veh .vehiculos .a9:hover, main .veh .vehiculos .a11:hover, main .veh .vehiculos .a13:hover, main .veh .vehiculos .a15:hover, main .veh .vehiculos .a17:hover, main .veh .vehiculos .a19:hover, main .veh .vehiculos .a21:hover, main .veh .vehiculos .a23:hover {
+    transform: translate(30px) scale(1.3, 1.3); }
+  main .veh .vehiculos .a2:hover, main .veh .vehiculos .a4:hover, main .veh .vehiculos .a6:hover, main .veh .vehiculos .a8:hover, main .veh .vehiculos .a10:hover, main .veh .vehiculos .a12:hover, main .veh .vehiculos .a14:hover, main .veh .vehiculos .a16:hover, main .veh .vehiculos .a18:hover, main .veh .vehiculos .a20:hover, main .veh .vehiculos .a22:hover, main .veh .vehiculos .a24:hover {
+    transform: translate(-30px) scale(1.3, 1.3); } }
+
+@media only screen and (min-width: 1029px) {
+  main h1 {
+    font-size: 28px; }
+  main .veh .vehiculos .a1:hover, main .veh .vehiculos .a4:hover, main .veh .vehiculos .a7:hover, main .veh .vehiculos .a10:hover, main .veh .vehiculos .a13:hover, main .veh .vehiculos .a16:hover, main .veh .vehiculos .a19:hover, main .veh .vehiculos .a22:hover {
+    transform: translate(40px) scale(1.4, 1.4); }
+  main .veh .vehiculos .a2:hover, main .veh .vehiculos .a5:hover, main .veh .vehiculos .a8:hover, main .veh .vehiculos .a11:hover, main .veh .vehiculos .a14:hover, main .veh .vehiculos .a17:hover, main .veh .vehiculos .a20:hover, main .veh .vehiculos .a23:hover {
+    transform: scale(1.4, 1.4); }
+  main .veh .vehiculos .a3:hover, main .veh .vehiculos .a6:hover, main .veh .vehiculos .a9:hover, main .veh .vehiculos .a12:hover, main .veh .vehiculos .a15:hover, main .veh .vehiculos .a18:hover, main .veh .vehiculos .a21:hover, main .veh .vehiculos .a24:hover {
+    transform: translate(-40px) scale(1.4, 1.4); }
+  main .container-form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; }
+    main .container-form form .campo, main .container-form form textarea {
+      width: 350px; }
+    main .container-form form textarea {
+      max-width: 350px;
+      min-width: 350px;
+      min-height: 100px;
+      max-height: 150px; } }
+
+@media only screen and (min-width: 1373px) {
+  main .veh .vehiculos .a1:hover, main .veh .vehiculos .a5:hover, main .veh .vehiculos .a9:hover, main .veh .vehiculos .a13:hover, main .veh .vehiculos .a17:hover, main .veh .vehiculos .a21:hover {
+    transform: translate(40px) scale(1.4, 1.4); }
+  main .veh .vehiculos .a2:hover, main .veh .vehiculos .a6:hover, main .veh .vehiculos .a10:hover, main .veh .vehiculos .a14:hover, main .veh .vehiculos .a18:hover, main .veh .vehiculos .a22:hover {
+    transform: scale(1.4, 1.4); }
+  main .veh .vehiculos .a3:hover, main .veh .vehiculos .a7:hover, main .veh .vehiculos .a11:hover, main .veh .vehiculos .a15:hover, main .veh .vehiculos .a19:hover, main .veh .vehiculos .a23:hover {
+    transform: scale(1.4, 1.4); }
+  main .veh .vehiculos .a4:hover, main .veh .vehiculos .a8:hover, main .veh .vehiculos .a12:hover, main .veh .vehiculos .a16:hover, main .veh .vehiculos .a20:hover, main .veh .vehiculos .a24:hover {
+    transform: translate(-40px) scale(1.4, 1.4); } }
