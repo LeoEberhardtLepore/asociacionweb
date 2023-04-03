@@ -38,8 +38,7 @@ body {
     align-items: center;
     justify-content: center; }
     body .eror img {
-      width: 50%;
-      padding-top: 80px; }
+      width: 80%; }
   body .flecha {
     position: fixed;
     bottom: 110px;
