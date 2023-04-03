@@ -31,14 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
-  body .eror {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center; }
-    body .eror img {
-      width: 80%; }
   body .flecha {
     position: fixed;
     bottom: 110px;
@@ -196,6 +188,11 @@ main {
       main .container-form .btn-enviar:hover {
         opacity: 1;
         animation: palpitar 2s infinite; }
+  main .error {
+    text-align: center; }
+    main .error img {
+      width: 80%;
+      padding: 5px; }
 
 footer {
   background-color: #c42121;
