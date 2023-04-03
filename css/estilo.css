@@ -189,10 +189,34 @@ main {
         opacity: 1;
         animation: palpitar 2s infinite; }
   main .error {
-    text-align: center; }
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px; }
     main .error img {
       width: 80%;
       padding: 5px; }
+    main .error .iniciobtn {
+      background-color: #c42121;
+      display: flex;
+      color: white;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      height: 40px;
+      width: 135px;
+      border-radius: 3px; }
+      main .error .iniciobtn .rin {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 15px; }
+      main .error .iniciobtn:hover {
+        opacity: 1;
+        animation: palpitar 2s infinite; }
 
 footer {
   background-color: #c42121;
