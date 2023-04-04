@@ -1,3 +1,71 @@
+@media only screen and (min-width: 230px){
+    h1{
+        font-size: 18px;
+    }
+    main{
+        .inicio{
+            .descripcion{
+                font-size: 10px;
+            }
+        }
+        .iniciovideo{
+            .invid{
+                width: 220px;
+                height: 124px;
+            }
+        }
+        .veh{
+            .vehiculos{
+                .texto{
+                    font-size: 12px;
+                }
+                img{
+                    width: 220px;
+                    height: 147px;
+                    &:hover{
+                        transition: transform 2s;
+                        transform: scale(1.1,1.1);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .vehiculosvideos{
+            .vhvid{
+                .vid{
+                    width: 220px;
+                    height: 124px;
+                }
+            }
+        }
+        .container-form{
+            grid-template-columns: repeat(1,1fr);
+            padding-left: 30px;
+            p{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+            }
+            form{
+                .campo, textarea{
+                    font-size: 12px;
+                    width: 200px;
+                }
+                textarea{
+                    min-width: 200px;
+                    max-width: 200px;
+                    min-height: 100px;
+                    max-height: 150px;
+                    font-size: 12px;
+                }
+            }
+            .btn-enviar{
+                font-size: 12px;
+            }
+        } 
+    }
+}
 @media only screen and (min-width: 350px){
     h1{
         font-size: 20px;
@@ -20,6 +88,8 @@
                     font-size: 15px;
                 }
                 img{
+                    width: 300px;
+                    height: 200px;
                     &:hover{
                         transition: transform 2s;
                         transform: scale(1.2,1.2);
@@ -39,25 +109,14 @@
         .container-form{
             grid-template-columns: repeat(1,1fr);
             padding-left: 30px;
-            p{
-                font-size: 12px;
-            }
-            a{
-                font-size: 12px;
-            }
             form{
                 .campo, textarea{
-                    font-size: 12px;
                     width: 300px;
                 }
                 textarea{
                     min-width: 300px;
                     max-width: 300px;
-                    font-size: 12px;
                 }
-            }
-            .btn-enviar{
-                font-size: 12px;
             }
         } 
     }
@@ -96,7 +155,6 @@
             form{
                 .campo, textarea{
                     font-size: 15px;
-                    width: 300px;
                 }
             }
             .btn-enviar{
@@ -159,8 +217,6 @@
                 textarea{
                     max-width: 350px;
                     min-width: 350px;
-                    min-height: 100px;
-                    max-height: 150px;
                 }
             }  
         }   
