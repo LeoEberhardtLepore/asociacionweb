@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -41,7 +41,31 @@
               <a class="nav-link" href="./views/repuestos.html">Repuestos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <div class="container-icon">
+                <div class="container-cart-icon">
+                  <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                  <div class="row-product hidden">
+                    <div class="cart-product">
+                      <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Bocina Sparton</p>
+                        <span class="precio-producto-carrito">$43000</span>
+                      </div>
+                      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </div>
+                  </div>
+                  <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$43000</span>
+                  </div>
+                  <p class="cart-empty">El carrito está vacío</p>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./views/contacto.html">Contacto</a>
