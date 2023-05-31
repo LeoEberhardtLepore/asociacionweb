@@ -13,6 +13,9 @@ header{
             display: inline-block;
             text-align: center;
             text-decoration: none;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
             .nav-link{
                 padding: 20px;
                 margin: 10px;
@@ -40,7 +43,109 @@ header{
                     }
                 }
             }
+            .container-icon{
+                color: white;
+                position: relative;
+                .icon-cart{
+                    width: 40px;
+                    height: 40px;
+                    fill: white;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .count-products{
+                    position: absolute;
+                    top: 60%;
+                    right: 0;
+                    display: flex;
+                    color: white;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 40%;
+                    display: flex;
+                    font-weight: 600;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-bg2;
+                    #contador-productos{
+                        font-size: 13px;
+                    }
+                }
+                .container-cart-products{
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                    background-color: #fff;
+                    color: black;
+                    width: 400px;
+                    z-index: 1;
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+                    border-radius: 10px;
+                    .row-product{
+                        .cart-product{
+                            display: flex;
+                            padding: 30px;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+                            .info-cart-product{
+                                display: flex;
+                                justify-content: space-between;
+                                flex: 0.8;
+                                .cantidad-producto-carrito{
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                }
+                                .titulo-producto-carrito{
+                                    font-size: 20px;
+                                }
+                                .precio-producto-carrito{
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .icon-close{
+                                width: 25px;
+                                height: 25px;
+                                &:hover{
+                                    fill: $color-bg2;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .cart-total{
+                        color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px 0;
+                        gap: 20px;
+                        h3{
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                        .total-pagar{
+                            font-size: 20px;
+                            font-weight: 900;
+                        }
+                        .cart-empty{
+                            margin-top: 10px;
+                            padding: 20px;
+                            text-align: center;
+                        } 
+                    }
+                    .hidden{
+                        display: none;
+                    }
+                    margin: 0px;   
+                }
+                .hidden-cart{
+                    display: none;
+                }
+            }
         }
     }
-
 }

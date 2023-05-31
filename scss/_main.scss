@@ -57,6 +57,49 @@ main{
             }
         }
     }
+    .container-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        .item{
+            border: $color-bg2 solid 2px;
+            margin: 20px;
+            figure{
+                img{
+                    width: 300px;
+                    height: 200px;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+            }
+            .info-product{
+                h2{
+                    font-size: 20px;
+                }
+                .price{
+                    margin: 5px;
+                }
+                .btn-add-cart{
+                margin-bottom: 10px;
+                font-size: 16px;
+                border: none;
+                height: 40px;
+                width: 135px;
+                outline: 0px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                background: $color-bg2;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                }
+            }
+        }
+    }
     .container-form{
         max-width: 1100px;
         text-align: center;
