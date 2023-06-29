@@ -1,19 +1,3 @@
-fetch('https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires')
-  .then(response => response.json())
-  .then(data => {
-    const currentDateTime = new Date(data.datetime);
-    const currentHour = currentDateTime.getHours();
-
-    if (currentHour >= 9 && currentHour <= 18) {
-      console.log('Esta dentro de nuestro horario laboral, podremos atender sus consultas');
-    } else {
-      console.log('No esta dentro de nuestro horario laboral, deberá esperar hasta 9 am para recibir atencion sobre sus consultas, muchas gracias');
-    }
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
 
@@ -23,11 +7,13 @@ btnCart.addEventListener('click', () => {
 
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
-
 const productsList = document.querySelector('.container-items');
 let allProducts = [];
 
 const valorTotal = document.querySelector('.total-pagar');
+const cartBtn = document.querySelector('.cart-buttons');
+const btnEmpCart = document.querySelector('.btn-vaciar-cart');
+const btnPurCart = document.querySelector('.btn-realizar-compra');
 const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
@@ -77,10 +63,12 @@ const showHTML = () => {
     cartEmpty.classList.remove('hidden');
     rowProduct.classList.add('hidden');
     cartTotal.classList.add('hidden');
+    cartBtn.classList.add('hidden');
   } else {
     cartEmpty.classList.add('hidden');
     rowProduct.classList.remove('hidden');
     cartTotal.classList.remove('hidden');
+    cartBtn.classList.remove('hidden');
   }
 
   rowProduct.innerHTML = '';
@@ -116,6 +104,27 @@ const showHTML = () => {
   localStorage.setItem('cartProducts', JSON.stringify(allProducts));
 };
 
+btnEmpCart.addEventListener('click', () => {
+  allProducts = [];
+  showHTML();
+  cartEmpty.classList.add('hidden');
+});
+
+btnPurCart.addEventListener('click', () => {
+
+  Swal.fire({
+    title: '¡Gracias por tu compra!',
+    text: 'Tu pedido ha sido procesado correctamente.',
+    icon: 'success',
+    confirmButtonText: 'Aceptar'
+  });
+
+  console.log('Compra realizada');
+  
+  allProducts = [];
+  showHTML();
+  cartEmpty.classList.add('hidden');
+});
 
 window.addEventListener('DOMContentLoaded', function () {
   const storedProducts = localStorage.getItem('cartProducts');

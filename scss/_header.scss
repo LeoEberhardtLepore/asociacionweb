@@ -125,6 +125,7 @@ header{
                         padding: 20px 0;
                         gap: 20px;
                         h3{
+                            margin: 0px;
                             font-size: 20px;
                             font-weight: 700;
                         }
@@ -138,10 +139,33 @@ header{
                             text-align: center;
                         } 
                     }
+                    .cart-buttons{
+                        width: auto;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            text-decoration: none;
+                            padding: 20px;
+                            color: black;
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+                        .btn-vaciar-cart{
+                            &:hover{
+                                color: $color-bg2;
+                            }
+                        }
+                        .btn-realizar-compra{
+                            &:hover{
+                                color: green;
+                            }
+                        }
+                    }
                     .hidden{
                         display: none;
                     }
-                    margin: 0px;   
                 }
                 .hidden-cart{
                     display: none;
